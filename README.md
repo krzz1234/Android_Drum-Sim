@@ -1,3 +1,4 @@
+
 # 🥁 Android Drum Simulator
 
 An interactive and lightweight **Android drum simulator app** built with **Java** and **Android SDK**. Tap the drum pads to play various drum sounds — designed for fun, learning, and demonstration of audio playback in Android.
@@ -27,28 +28,52 @@ An interactive and lightweight **Android drum simulator app** built with **Java*
 1. Clone the repository:
    ```bash
    git clone https://github.com/krzz1234/Android_Drum-Sim.git
-2. Open the project in Android Studio
+
+2. Open the project in **Android Studio**
 
 3. Connect an Android device or start an emulator
 
-4. Click Run
+4. Click **Run**
 
-🛠️ Tech Stack
-Language: Java
+---
 
-Framework: Android SDK
+## 📁 Project Structure
 
-Architecture: Activity-based
+```
+app/
+├── java/
+│   └── com.example.drumsimulator/
+│       ├── MainActivity.java
+│       └── utils/
+│           └── SoundManager.java
+├── res/
+│   ├── layout/
+│   │   └── activity_main.xml
+│   ├── drawable/
+│   └── raw/                <-- Drum sound files (.wav, .mp3)
+└── AndroidManifest.xml
+```
 
-Audio: Native Android SoundPool API for efficient sound playback
+---
 
-📚 Learning Goals
+## 🛠️ Tech Stack
+
+* **Language:** Java
+* **Framework:** Android SDK
+* **Architecture:** Activity-based
+* **Audio:** Native Android `SoundPool` API for efficient sound playback
+
+---
+
+## 📚 Learning Goals
+
 This app was developed to:
 
-Explore Android’s native audio capabilities using SoundPool
+* Explore Android’s native audio capabilities using `SoundPool`
+* Understand how to trigger and manage sound effects on UI interaction
+* Practice building a fun and interactive app without external dependencies
+* Learn basic performance optimization for mobile sound-based apps
 
-Understand how to trigger and manage sound effects on UI interaction
+---
 
-Practice building a fun and interactive app without external dependencies
 
-Learn basic performance optimization for mobile sound-based apps
